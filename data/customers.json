@@ -1,0 +1,102 @@
+[
+  {
+    "companyName": "Tata Motors",
+    "address": "Tata Engineering and Locomotive Company Ltd. (TELCO)",
+    "city": "Ahmedabadd",
+    "state": "Gujarat",
+    "gstin": "27AAACT2727Q1ZW",
+    "fieldOfBusiness": " ",
+    "contacts": [
+      {
+        "name": "Tata Motors",
+        "mobile": "18002098282",
+        "email": "updated@tatamotors.com"
+      },
+      {
+        "name": "dwd",
+        "mobile": "wdw",
+        "email": ""
+      }
+    ]
+  },
+  {
+    "companyName": "Mahindra Shital Motors - SUV Showroom",
+    "address": "Ground/ 1st Floor, Rajyash Rise Narol, Road, near Vishala Restaurant, Vishala",
+    "city": "Ahmedabad",
+    "state": "Gujarat",
+    "gstin": "093758 08050",
+    "fieldOfBusiness": "Automotive company",
+    "contacts": [
+      {
+        "name": "Mahindra",
+        "mobile": "093758 08050",
+        "email": ""
+      }
+    ]
+  },
+  {
+    "companyName": "Hyundai",
+    "address": "Ground/ 1st Floor, Rajyash Rise Narol, Road, near Vishala Restaurant, Vishala",
+    "city": "Ahmedabad",
+    "state": "Gujarat",
+    "gstin": "27AAACT2727Q1ZWYQ",
+    "fieldOfBusiness": "Automotive company",
+    "contacts": [
+      {
+        "name": "Hyundai",
+        "mobile": "hyundai@gmail.baroda",
+        "email": "hyundai@gmail.com"
+      },
+      {
+        "name": "Hyundaiii Ahmedabad",
+        "mobile": "hyundai@gmail.baroda",
+        "email": "hyundai@gmail.ahmedabad"
+      },
+      {
+        "name": "Hyundaiii Baroda",
+        "mobile": "11",
+        "email": "hyundai@gmail.baroda"
+      },
+      {
+        "name": "hyundai@gmail.baroda",
+        "mobile": "hyundai@gmail.baroda",
+        "email": "11@gmail"
+      }
+    ]
+  },
+  {
+    "companyName": "Yash Trading co.",
+    "address": "Rajyash Rise Narol, Road,",
+    "city": "Baroda",
+    "state": "Mumbai",
+    "gstin": "27AAACT2727QQQ",
+    "fieldOfBusiness": "",
+    "contacts": [
+      {
+        "name": "Yash",
+        "mobile": "9016708450",
+        "email": ""
+      },
+      {
+        "name": "Dhruv",
+        "mobile": "",
+        "email": "yash@gmail.com"
+      }
+    ]
+  },
+  {
+    "companyName": "Yash",
+    "address": "Darji",
+    "city": "Ahmedabad",
+    "state": "Gujarat",
+    "gstin": "71881=19010\\",
+    "fieldOfBusiness": "I dont know",
+    "contacts": [
+      {
+        "name": "1313",
+        "mobile": "838383",
+        "email": "wi2i2"
+      }
+    ]
+  }
+]

@@ -1,0 +1,118 @@
+#search-section {
+    transition: opacity 0.5s ease-in-out;
+}
+
+th button {
+  background: none;
+  border: none;
+  font-size: 12px; /* Adjust font size */
+  padding: 2px 5px; /* Adjust padding */
+  cursor: pointer;
+}
+
+th,td {
+  font-size: 14px; /* Adjust font size */
+}
+
+th button:focus {
+  outline: none;
+}
+
+th button.active {
+  font-weight: bold;
+}
+
+th button.asc {
+  color: green;
+}
+
+th button.desc {
+  color: red;
+}
+
+  
+/* Style for the custom confirmation dialog */
+.confirm-dialog {
+  display: none; /* Hidden by default */
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+.confirm-dialog-content {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+.confirm-dialog button {
+  margin: 10px;
+}
+
+.confirm-dialog .btn-danger {
+  background-color: #dc3545;
+  color: #fff;
+}
+
+.confirm-dialog .btn-secondary {
+  background-color: #6c757d;
+  color: #fff;
+}
+
+/* Modal styles */
+.modal {
+  display: none; /* Initially hidden */
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
+}
+
+/* Modal content */
+.modal-content {
+  background-color: #fff;
+  margin: 5% auto; /* Adjusted to make the modal slightly smaller from the top */
+  padding: 30px; /* Increased padding for more spacing */
+  border: 1px solid #888;
+  width: 85%; /* Increased width to 85% */
+  max-width: 800px; /* Set max width to 800px for larger content */
+  max-height: 90%; /* Increased max height to 90% of screen */
+  overflow-y: auto; /* Allow scrolling if content exceeds max height */
+  box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.3); /* Slightly larger shadow for better effect */
+  border-radius: 10px; /* Rounded corners for a more modern look */
+}
+
+/* Close button */
+.close-btn {
+  color: #aaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.close-btn:hover,
+.close-btn:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+/* Customer details section */
+#viewCustomerDetails {
+  max-height: 500px; /* Increased max height for more content visibility */
+  overflow-y: auto; /* Enable scrolling if content exceeds the max height */
+  padding-right: 10px; /* Ensure scroll doesn't overlap content */
+}

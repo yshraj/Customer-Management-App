@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Customer Management App</title>
+  <link rel="stylesheet" href="./css/bootstrap.min.css">
+  <link rel="stylesheet" href="./css/styles.css">
+  <script src="./js/xlsx.full.min.js"></script>
+</head>
+<body>
+  <div class="container mt-5">
+    <h1>Customer Management App</h1>
+
+    <!-- Main Menu -->
+    <div id="main-menu">
+      <button class="btn btn-primary" onclick="navigateTo('addCustomer')">Add New Data</button>
+      <button class="btn btn-secondary" onclick="navigateTo('viewCustomers')">View/Edit Customers</button>
+      <button class="btn btn-success" onclick="navigateTo('downloadData')">Download</button>
+      <button class="btn btn-info" onclick="navigateTo('home')">Home</button>
+    </div>
+
+    <br><br>
+    <!-- Search Bar Section (visible on home page only) -->
+    <div id="search-section">
+      <h3>Search Customers</h3>
+      <input
+        type="text"
+        id="searchInput"
+        class="form-control"
+        placeholder="Search by Name or GSTIN"
+        oninput="searchCustomers()"
+      />
+      <ul id="searchResults" class="list-group mt-3"></ul>
+    </div>
+
+    <!-- View Customer Modal -->
+    <div id="viewCustomerModal" class="modal">
+      <div class="modal-content">
+        <span class="close-btn" onclick="closeViewModal()">&times;</span>
+        <h4>Customer Details</h4>
+        <div id="viewCustomerDetails">
+          <!-- Customer details will be populated here -->
+        </div>
+      </div>
+    </div>
+
+<!-- Edit Customer Modal -->
+<div id="editCustomerModal" class="modal">
+  <div class="modal-content">
+    <span class="close-btn" onclick="closeEditModal()">&times;</span>
+    <h4>Edit Customer</h4>
+    <form id="editCustomerForm" onsubmit="submitEditForm(event)">
+      <input type="hidden" id="editCustomerIndex" />
+      <div class="form-group">
+        <label for="editCompanyName">Company Name *</label>
+        <input type="text" id="editCompanyName" class="form-control" required />
+      </div>
+      <div class="form-group">
+        <label for="editAddress">Address *</label>
+        <input type="text" id="editAddress" class="form-control" required />
+      </div>
+      <div class="form-group">
+        <label for="editCity">City *</label>
+        <input type="text" id="editCity" class="form-control" required />
+      </div>
+      <div class="form-group">
+        <label for="editState">State *</label>
+        <input type="text" id="editState" class="form-control" required />
+      </div>
+      <div class="form-group">
+        <label for="editGSTIN">GSTIN *</label>
+        <input type="text" id="editGSTIN" class="form-control" required />
+      </div>
+      <div class="form-group">
+        <label for="editFieldOfBusiness">Field of Business</label>
+        <input type="text" id="editFieldOfBusiness" class="form-control" />
+      </div>
+      
+      <!-- Contact Details -->
+      <div id="editContactsContainer">
+        <!-- Dynamic contact fields will be added here -->
+      </div>
+
+      <button type="button" class="btn btn-secondary" onclick="addContactField()">Add Contact</button>
+      <button type="submit" class="btn btn-primary">Save Changes</button>
+    </form>
+  </div>
+</div>
+
+
+    <!-- Placeholder for dynamic app content -->
+    <div id="confirmDialog" class="confirm-dialog">
+      <div class="confirm-dialog-content">
+        <p id="confirmMessage">Are you sure you want to delete this record?</p>
+        <button class="btn btn-danger" id="confirmYes">Yes</button>
+        <button class="btn btn-secondary" id="confirmNo">No</button>
+      </div>
+    </div>
+
+    <div id="app-content"></div>
+  </div>
+
+  <script src="./js/main.js"></script>
+</body>
+</html>
